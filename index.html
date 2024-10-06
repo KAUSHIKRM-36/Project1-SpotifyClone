@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify-clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="nav">
+
+        <div class="logo">
+            <img src="img/logo.png" >
+        </div>
+
+        <div class="searchbar">
+            <div class="homeButton">
+                <button><img src="img/home.png"></button>
+            </div>
+            <div class="searchBar">
+                <div class="searchLogo">
+                    <button><img src="img/search.svg"></button>
+                </div>
+                <input type="text" placeholder="what do you want to play?">
+            </div>
+        </div>
+
+        <div class="lastele">
+            <div class="signup">
+                <!-- Signup Modal -->
+                <button id="navSignupButton">Sign Up</button>
+            </div>
+            <div class="login">
+                <!-- Login Modal -->
+                <button id="navLoginButton">Log In</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="left">
+        
+            <div class="title">
+                <p>
+                    Your Playlists
+                </p>
+                <button id="playlistMenuButton">
+                    +
+                </button>
+            </div>
+
+            <div class="playlistskalist">
+                <ul class="playlists">
+                    <li>
+                        <img src="img/cover.jpg">
+                        <p>top 50</p>
+                    </li>
+                    <li>
+                        <img src="img/cover.jpg">
+                        <p>popular hits</p>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="right">
+
+            <div id="popularArtists" class="rightele">
+                <h3>Popular Artists</h3>
+                <ul class="innerUl">
+                    <li onclick="window.location.href='artist.html'">
+                        <img src="img/drake.jpg">
+                        <p>DRAKE</p>
+                    </li>
+                    <li onclick="window.location.href='artist.html'">
+                        <img src="img/eminem.jpg">
+                        <p>EMINEM</p>
+                    </li>
+                    <li onclick="window.location.href='artist.html'">
+                        <img src="img/kendrick.jpg">
+                        <p>KENDRICK LAMAR</p>
+                    </li>
+                    <li onclick="window.location.href='artist.html'">
+                        <img src="img/travisscott.webp">
+                        <p>TRAVIS SCOTT</p>
+                    </li>
+                    <li onclick="window.location.href='artist.html'">
+                        <img src="img/drake.jpg">
+                        <p>DRAKE</p>
+                    </li>
+                   
+                </ul>
+            </div>
+
+            <div id="popularAlbums" class="rightele">
+                <h3>Popular Albums</h3>
+                <ul class="innerUl">
+                    <li onclick="window.location.href='album.html'">
+                        <img src="img/cover.jpg">
+                        <p class="1">album name</p>
+                        <p class="2">artist name</p>
+                    </li>
+                    <li onclick="window.location.href='album.html'">
+                        <img src="img/cover.jpg">
+                        <p class="1">album name</p>
+                        <p class="2">artist name</p>
+                    </li>
+                    <li onclick="window.location.href='album.html'">
+                    <img src="img/cover.jpg">
+                    <p class="1">album name</p>
+                    <p class="2">artist name</p>
+                    </li>
+                    <li onclick="window.location.href='album.html'">
+                        <img src="img/cover.jpg">
+                        <p class="1">album name</p>
+                        <p class="2">artist name</p>
+                    </li>
+                    <li onclick="window.location.href='album.html'">
+                        <img src="img/cover.jpg">
+                        <p class="1">album name</p>
+                        <p class="2">artist name</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="popularRadio" class="rightele">
+                <h3>Popular Radios</h3>
+                <ul class="innerUl">
+                    <li onclick="window.location.href='radio.html'">
+                        <img src="img/cover.jpg">
+                        <p>artists</p>
+                    </li>
+                    <li onclick="window.location.href='radio.html'">
+                        <img src="img/cover.jpg">
+                        <p>artists</p>
+                    </li>
+                    <li onclick="window.location.href='radio.html'">
+                        <img src="img/cover.jpg">
+                        <p>artists</p>
+                    </li>
+                    <li onclick="window.location.href='radio.html'">
+                        <img src="img/cover.jpg">
+                        <p>artists</p>
+                    </li>
+                    <li onclick="window.location.href='radio.html'">
+                        <img src="img/cover.jpg">
+                        <p>artists</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="featuredCharts" class="rightele">
+                <h3>Featured Charts</h3>
+                <ul class="innerUl">
+                    <li onclick="window.location.href='charts.html'">
+                        <img src="img/cover.jpg">
+                        <p>Top 50</p>
+                    </li>
+                    <li onclick="window.location.href='charts.html'">
+                        <img src="img/cover.jpg">
+                        <p>weeks best</p>
+                    </li>
+                    <li onclick="window.location.href='charts.html'">
+                    <img src="img/cover.jpg">
+                    <p>new arrivals</p>
+                    </li>
+                    <li onclick="window.location.href='charts.html'">
+                        <img src="img/cover.jpg">
+                        <p>new arrivals</p>
+                    </li>
+                    <li onclick="window.location.href='charts.html'">
+                        <img src="img/cover.jpg">
+                        <p>new arrivals</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="extraContent">
+
+                <div class="list1">
+                    <p>Company</p>
+                    <p>About</p>
+                    <p>jobs</p>
+                    <p>For the Record</p>
+                    <p>Communities</p>
+                </div>
+
+                <div class="list2">
+                    <p>Support</p>
+                    <p>Free Mobile App</p>
+                    <p>Spotify Plans</p>
+                </div>
+
+                <div class="list3">
+                    <p>Premium Individual</p>
+                    <p>Premium Duo</p>
+                    <p>Premium Family</p>
+                    <p>Premium Student</p>
+                    <p>Spotify Free</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="bottom">
+
+        <div class="musicDetails">
+            <img src="img/cover.jpg">
+            <div class="details">
+                <h3>Song Name</h3>
+                <p>Artist Name</p>
+            </div>
+        </div>
+
+        <div class="player">
+
+            <div class="playerIcons">
+                <button><img src="img/prevsong.svg"></button>
+                <button><img src="img/play.svg"></button>
+                <button><img src="img/nextsong.svg"></button>
+            </div>
+
+            <div class="playerProgress">
+                <input type="range">
+            </div>
+
+        </div>
+
+        <div class="volume">
+
+            <div class="volumeIcon">
+                <button><img src="img/volume.svg"></button>
+                <input type="range">
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span id="closeLoginModal" class="close">&times;</span>
+            <h2>Login</h2>
+            <input type="email" id="email" class="modalInput" placeholder="Enter your email">
+            <button id="modalLoginButton">Done</button>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span id="closeSignupModal" class="close">&times;</span>
+            <h2>Signup</h2>
+            <input type="email" id="signupEmail" class="modalInput" placeholder="Enter your email">
+            <button id="modalSignupButton">Done</button>
+        </div>
+    </div>
+
+    <!-- Playlist Modal -->
+    <div id="playlistModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <h2>Manage Playlist</h2>
+            <div id="playlistOptions">
+                <button id="addButton">Add Playlist</button>
+                <button id="deleteButton">Delete Playlist</button>
+            </div>
+            <input type="text" id="playlistName"  class="modalInput" placeholder="Enter playlist name" style="display: none;">
+            <button id="confirmAction" style="display: none;">Confirm</button>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+Fetch Artist Information:
+URL format: https://musicbrainz.org/ws/2/artist/?query=artist:<artist_name>&fmt=json

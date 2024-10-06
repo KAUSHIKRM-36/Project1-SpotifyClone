@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Internal CSS for Profile Page */
+        body {
+            background-color: #181818;
+            color: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .nav {
+            width: 100%;
+            padding: 10px 20px;
+            background-color: #060606;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .container {
+            padding: 20px;
+            background: linear-gradient(to bottom, #0e0d0d, #000000);
+            border-radius: 10px;
+            width: 80%;
+            max-width: 600px;
+            text-align: center;
+        }
+        h2 {
+            margin: 0;
+        }
+        button {
+            margin-top: 20px;
+            background-color: #1DB954;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            color: white;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        button:hover {
+            background-color: #1aa34a;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <h1>User Profile</h1>
+        <div class="lastele">
+            <button onclick="logout()">Log Out</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Welcome, <span id="userEmail"></span>!</h2>
+        <p>Your details:</p>
+        <p>Email: <span id="emailDisplay"></span></p>
+    </div>
+
+
+</body>
+</html>
